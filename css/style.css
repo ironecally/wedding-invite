@@ -403,7 +403,7 @@ header {
   height: 100%;
   position: relative;
   background-repeat: no-repeat;
-  background-position: center;
+  /* background-position: center; */
   background-attachment: fixed
 }
 
@@ -820,7 +820,9 @@ header {
   border-radius: 50%;
   position: absolute;
   right: 0;
-  margin: 30px 0 0 0
+  margin: 30px 0 0 0;
+  background-position: center;
+  background-size: cover;
 }
 
 .im_arrows {
@@ -1409,7 +1411,7 @@ header {
 
 /*# 11. Where&When*/
 .when_where {
-  background-size: cover;
+  background-size: auto;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
