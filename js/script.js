@@ -11,54 +11,60 @@
     function send_form (type) {
      
       var name = $("input#name_" + type).val();
-      if (name == "") {
+      if (name.length == 0) {
         $("input#name_" + type).css({border: "1px solid red"});
         $("input#name_" + type).focus();
         return false;
       }
-      var email = $("input#email_" + type).val();
-      if (email == "") {
-        $("input#email_" + type).css({border: "1px solid red"});
-        $("input#email_" + type).focus();
-        return false;
-      }
+      
       var guest = $("input#guest_" + type).val();
-      if (guest == "") {
+      if (guest.length == 0) {
         $("input#guest_" + type).css({border: "1px solid red"});
         $("input#guest_" + type).focus();
         return false;
       }
-      var attending = $("input#attending_" + type).val();
-      if (attending == "") {
-        $("input#attending_" + type).css({border: "1px solid red"});
-        $("input#attending_" + type).focus();
+
+      var phone = $("input#phone_" + type).val();
+      if (phone.length == 0) {
+        $("input#phone_"+type).css({border: "1px solid red"});
+        $("input#phone_"+type).focus();
         return false;
       }
 
-      console.log(name);
-      console.log(email);
-      console.log(guest);
-      console.log(attending);
+      var relative = "";
+      var relative_radio = $("input[name=relatives]:checked").val();
+      if (relative_radio != "1" && relative_radio != "2"){
+        $('input#relatives_' + type).css({border: "1px solid red"});
+        $('input#relatives_' + type).focus();
+        return false
+      }
 
-      var dataString = '&entry.1068564038=' + name + '&entry.352472512=' + email + '&entry.1150838879=' + guest + '&entry.66493311=' + attending;
-      var form = $(this);
-      var str = form.serialize();
+      var relativeList = ["Andika", "Monika"];
+      relative = relativeList[relative_radio-1];
+
+      console.log(name);
+      console.log(guest);
+      console.log(phone);
+      console.log(relative_radio);
+      console.log(relative);
+
+    
       function sent(){
         $('#div_' + type).html("<div id='form_send_message'>Thank you :)</div>", 1500);
       }
 
-      var data = {
-        "entry.796497351" : "",/* name here*/
-        "entry.779483167": "", /* phone number */
-        "entry.695249694": "", /* number of attendant */
-        "entry.901454646" :"", /* acquintance of */
+      var dataObj = {
+        "entry.796497351" : name,/* name here*/
+        "entry.779483167": phone, /* phone number */
+        "entry.695249694": guest, /* number of attendant */
+        "entry.901454646" :relative, /* acquintance of */
         
       }
 
       $.ajax({
         type: "POST",
         url: "https://docs.google.com/forms/d/e/1FAIpQLSe5MvN6Dt-udJfijFUfaklHMpaycZkoI8hUfXo6G6dTVqhqDA/formResponse",
-        data: dataString,
+        data: dataObj,
         complete:sent
       });
     }
