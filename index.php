@@ -234,7 +234,7 @@
                 <div class="paper">
 
                     <!-- End Date of Reservation -->
-                    <div class="paper_title">Please RSVP by Dec 15th</div>
+                    <div class="paper_title">Please RSVP by Dec 15th, 2019</div>
 
                     <!-- Form -->
                     <div id="div_block_1">
@@ -242,14 +242,18 @@
                             <input type="text" class="form-control" id="name_block_1" placeholder="Your Name">
                         </div>
                         <div class="txt_input">
-                            <input type="text" class="form-control" id="guest_block_1" placeholder="Your Guest's Name">
+                            <input type="text" class="form-control" id="guest_block_1" placeholder="Number of Guest">
                         </div>
                         <div class="txt_input">
-                            <input type="text" class="form-control" id="email_block_1" placeholder="Your E-mail">
+                            <input type="text" class="form-control" id="phone_block_1" placeholder="Your Phone Number">
                         </div>
-                        <div class="txt_input">
-                            <input type="text" class="form-control" id="attending_block_1" placeholder="# Attending">
+                        <div class="radio_input">
+                            Relative of: <br/>
+                            &nbsp; &nbsp; <input type="radio" class="radio_form" id="relatives_block_1" name="relatives" value="1">Andika
+                            &nbsp; &nbsp; &nbsp; <input type="radio" class="radio_form" id="relatives_block_1" name="relatives" value="2">Monika <br/>
+                            
                         </div>
+
                         <input name="" type="submit" value="Send" class="btn btn-lg submit_block_1">
 
 

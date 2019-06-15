@@ -9,7 +9,7 @@
     });
 
     function send_form (type) {
-
+     
       var name = $("input#name_" + type).val();
       if (name == "") {
         $("input#name_" + type).css({border: "1px solid red"});
@@ -46,9 +46,18 @@
       function sent(){
         $('#div_' + type).html("<div id='form_send_message'>Thank you :)</div>", 1500);
       }
+
+      var data = {
+        "entry.796497351" : "",/* name here*/
+        "entry.779483167": "", /* phone number */
+        "entry.695249694": "", /* number of attendant */
+        "entry.901454646" :"", /* acquintance of */
+        
+      }
+
       $.ajax({
         type: "POST",
-        url: "https://docs.google.com/forms/d/1OCiSMSdit8QgxlhWjO9y9MmtFgpLdo52xf7UaCfY_ng/formResponse",
+        url: "https://docs.google.com/forms/d/e/1FAIpQLSe5MvN6Dt-udJfijFUfaklHMpaycZkoI8hUfXo6G6dTVqhqDA/formResponse",
         data: dataString,
         complete:sent
       });
