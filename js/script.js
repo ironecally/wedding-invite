@@ -138,12 +138,12 @@
     /*CountDown*/
     $('.married_coundown').countdown({until: new Date("Jan 19, 2020 11:00:00")});
 
-    /*OWL Carousel in Our Story*/
-    $(".story_wrapper").owlCarousel({
-      navigation: true, responsive: true, responsiveRefreshRate: 200, slideSpeed: 200,
-      paginationSpeed: 200, rewindSpeed: 500, items: 3, itemsTablet: [768, 1], autoPlay: false,
-      itemsMobile: [479, 1], itemsDesktopSmall: [980, 1], itemsDesktop: [1500, 2], mouseDrag: true
-    });
+    // /*OWL Carousel in Our Story*/
+    // $(".story_wrapper").owlCarousel({
+    //   navigation: true, responsive: true, responsiveRefreshRate: 200, slideSpeed: 200,
+    //   paginationSpeed: 200, rewindSpeed: 500, items: 2, itemsTablet: [768, 1], autoPlay: false,
+    //   itemsMobile: [479, 1], itemsDesktopSmall: [980, 1], itemsDesktop: [1500, 2], mouseDrag: true
+    // });
 
     /*Gallery Carousel */
     $(".gallery_wrapper").owlCarousel({

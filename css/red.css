@@ -1,16 +1,21 @@
 body {
-	background-image:url(../images/red/main_back.jpg);
+	background-image:url(../images/red/main_back2.png);
+	/* background-size: cover !important; */
+	/* background-color: rgba(0,0,0,0.5); */
+
 }
 h2 {
-	color:#e93b38
+	color:#CFB53B;
 }
 h2:after {
 	background: url(../images/red/bullet.png);
-	background-size: cover;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 .bullet {
 	background: url(../images/red/bullet.png);
-	background-size: cover;
+	background-size: contain;
+	background-repeat:no-repeat;
 }
 .im_arrows:before {
 	background: url(../images/red/im_arrow_end.png);
@@ -22,19 +27,19 @@ h2:after {
 }
 
 .btn {
-	color:#e93b38!important;
-	border: 2px solid #e93b38
+	color:#CFB53B!important;
+	border: 2px solid #CFB53B
 	
 }
 	.btn:hover {
-		background:#e93b38;
+		background:#CFB53B;
 		color:#fff!important
 	}
 	.btn:active, .btn:focus {
-		background:#e93b38;
+		background:#CFB53B;
 	}
 .married_coundown {
-	color: #e93b38;
+	color: #CFB53B;
 }
 .double_arrow {
 	background: url(../images/red/double_arrow.png);
@@ -63,10 +68,7 @@ h2:after {
 }
 
 .story_title, .story_title i {
-	color: #e93b38;
-}
-.story_title:before, .story_title:after {
-	background:#e93b38;
+	color: #CFB53B;
 }
 
 .when_where .over{
@@ -91,5 +93,5 @@ h2:after {
 	background:url(../images/red/envelope_front.png);
 }
 .paper .paper_title {
-	color: #e93b38;
+	color: #CFB53B;
 }
