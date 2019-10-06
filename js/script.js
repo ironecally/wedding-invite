@@ -190,6 +190,10 @@
       color: '#fff', minPixel: 1, maxPixel: 3, total: 55, on: '.into_firefly'
     });
 
+    $("#envelope").on("click", function(e){
+      $("#envelope").attr("class", "")
+    });
+
     /* Refresh ScrollR */
     // s.refresh($(".guest_wrapper, .our_story"));
 
