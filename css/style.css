@@ -826,6 +826,18 @@ header {
   background-size: cover;
 }
 
+.im3 {
+  width: inherit;
+  height: 320px;
+  /* position: absolute; */
+  /* left: 0; */
+  margin: 30px 0 0 0;
+  background-position: center;
+  background-size: contain;
+  background-image: url(../img/savethedate2.png);
+  background-repeat: no-repeat;
+}
+
 .im_arrows {
   position: absolute;
   width: 100%;
@@ -1942,7 +1954,8 @@ header {
 
   .story_txt {
     padding: 0 24px;
-    margin: 220px 0 0
+    /* margin: 220px 0 0 */
+    margin-top: 220px;
   }
 
   .story_back, .story_img_plane, .story_img_plane_right, .story_title:after, .story_title:before, .owl-pagination {
