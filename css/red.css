@@ -17,14 +17,6 @@ h2:after {
 	background-size: contain;
 	background-repeat:no-repeat;
 }
-.im_arrows:before {
-	background: url(../images/red/im_arrow_end.png);
-	background-size: cover;
-}
-.im_arrows:after {
-	background: url(../images/red/im_arrow_start.png);
-	background-size: cover;
-}
 
 .btn {
 	color:#CFB53B!important;
@@ -41,10 +33,7 @@ h2:after {
 .married_coundown {
 	color: #CFB53B;
 }
-.double_arrow {
-	background: url(../images/red/double_arrow.png);
-	background-size: cover;
-}
+
 /* 
 .owl-pagination {
 	background: url(../images/red/arrow_back.png) repeat-x;

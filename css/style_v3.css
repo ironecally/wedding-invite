@@ -684,12 +684,6 @@ header {
   text-transform: lowercase;
 }
 
-.double_arrow {
-  width: 188px;
-  height: 25px;
-  margin: 25px auto
-}
-
 .bride_title_block {
   font: 46px/48px Great Vibes;
   text-align: center;
@@ -837,33 +831,6 @@ header {
   background-image: url(../img/savethedate2.png);
   background-repeat: no-repeat;
 }
-
-.im_arrows {
-  position: absolute;
-  width: 100%;
-  height: 100%
-}
-
-.im_arrows:before {
-  width: 39px;
-  height: 77px;
-  display: block;
-  content: "";
-  position: absolute;
-  top: -43px;
-  right: 20px
-}
-
-.im_arrows:after {
-  width: 13px;
-  height: 38px;
-  display: block;
-  content: "";
-  position: absolute;
-  bottom: -34px;
-  right: 120px
-}
-
 /*# 6. Our Story*/
 .our_story {
   padding: 48px 0 20px;
