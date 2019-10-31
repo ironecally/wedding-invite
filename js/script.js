@@ -18,14 +18,14 @@
       }
       
       var guest = $("input#guest_" + type).val();
-      if (guest.length == 0) {
+      if (guest.length == 0 || guest < 1 || guest > 3) {
         $("input#guest_" + type).css({border: "1px solid red"});
         $("input#guest_" + type).focus();
         return false;
       }
 
       var phone = $("input#phone_" + type).val();
-      if (phone.length == 0) {
+      if (phone.length < 6) {
         $("input#phone_"+type).css({border: "1px solid red"});
         $("input#phone_"+type).focus();
         return false;
